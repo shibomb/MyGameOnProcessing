@@ -4,18 +4,18 @@ class GameObject {
   protected int size;
 
   public GameObject(int x, int y, int size) {
-    println(this.getClass().getName() + "#GameObject");
+    //println(this.getClass().getName() + "#GameObject");
     this.x = x;
     this.y = y;
     this.size = size;
   }
 
   public void beforeUpdate() {
-    println(this.getClass().getName() + "#beforeUpdate");
+    //println(this.getClass().getName() + "#beforeUpdate");
   }
 
   public void update() {
-    println(this.getClass().getName() + "#update");
+    //println(this.getClass().getName() + "#update");
 
     // 線の色を設定する
     stroke(0, 0, 0, 255);
@@ -25,6 +25,6 @@ class GameObject {
   }
 
   public void afterUpdate() {
-    println(this.getClass().getName() + "#afterUpdate");
+    //println(this.getClass().getName() + "#afterUpdate");
   }
 }

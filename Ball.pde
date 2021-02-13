@@ -16,9 +16,11 @@ class Ball extends GameObject {
     //ボールを跳ね返らせる関数(メソッド)
     if (x > width-(size/2) || x < (size/2)) {
       xspeed *= -1;
+      gm.removeGameObject(this);
     }
     if (y > height-(size/2) || y < (size/2)) {
       yspeed *= -1;
+      gm.removeGameObject(this);
     }
   }
 
